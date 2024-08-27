@@ -1464,7 +1464,7 @@ h3 {
   margin: 0 auto;
 }
 .dashboard__grafica {
-  width: min(95%, 140rem);
+  width: min(95%, 65rem);
   margin: 0 auto;
 }
 

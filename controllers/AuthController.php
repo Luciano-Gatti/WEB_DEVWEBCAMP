@@ -1,7 +1,7 @@
 <?php
 namespace Controllers;
 
-use Classes\Email;
+use Classes\Emails;
 use Model\Usuario;
 use MVC\Router;
 
@@ -93,7 +93,7 @@ class AuthController {
                     $resultado =  $usuario->guardar();
 
                     // Enviar email
-                    $email = new Email($usuario->email, $usuario->nombre, $usuario->token);
+                    $email = new Emails($usuario->email, $usuario->nombre, $usuario->token);
                     $email->enviarConfirmacion();
                     
 
@@ -133,7 +133,7 @@ class AuthController {
                     $usuario->guardar();
 
                     // Enviar el email
-                    $email = new Email( $usuario->email, $usuario->nombre, $usuario->token );
+                    $email = new Emails( $usuario->email, $usuario->nombre, $usuario->token );
                     $email->enviarInstrucciones();
 
 

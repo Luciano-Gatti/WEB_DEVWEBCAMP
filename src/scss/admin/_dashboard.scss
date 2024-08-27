@@ -110,6 +110,6 @@
     }
 
     &__grafica{
-        @include m.contenedor;
+        @include m.contenedor-sm;
     }
 }
