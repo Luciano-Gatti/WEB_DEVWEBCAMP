@@ -20,7 +20,7 @@ class Router
     public function comprobarRutas()
     {
 
-        $url_actual = $_SERVER['PATH_INFO'] ?? '/';
+        $url_actual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ($method === 'GET') {
@@ -38,7 +38,7 @@ class Router
 
     public function render($view, $datos = [])
     {
-        $url_actual = $_SERVER['PATH_INFO'] ?? '/';
+        $url_actual =  strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
 
         foreach ($datos as $key => $value) {
             $$key = $value; 
