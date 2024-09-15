@@ -1,18 +1,20 @@
-# Salón de Peluquería - Sistema de Reservas
+# DevWebCamp - Página de Eventos y Gestión de Conferencias
 
-Este proyecto es una página web diseñada para un salón de peluquería que permite a los clientes reservar citas en línea y a los administradores gestionar los servicios y las citas creadas.
+Este proyecto es una aplicación web diseñada para un evento llamado DevWebCamp, donde los usuarios pueden registrarse, comprar pases para el evento, ver la lista de conferencistas y las conferencias que se impartirán. También cuenta con un panel de administración para gestionar todos los aspectos del evento.
 
 ## Características
 
-- **Reservas de Citas:** Los clientes pueden reservar citas en línea seleccionando el servicio deseado, la fecha y la hora conveniente.
-- **Administración de Servicios:** Los administradores pueden agregar, editar y eliminar servicios ofrecidos por el salón de peluquería.
-- **Administración de Citas:** Los administradores pueden ver todas las citas programadas, editar detalles y cancelar citas según sea necesario.
+- **Compra de Pases con PayPal:** Los usuarios pueden comprar pases para el evento utilizando PayPal como método de pago.
+- **Registro a Eventos y Workshops:** Los usuarios pueden registrarse para participar en diferentes workshops y eventos dentro del congreso.
+- **Conferencistas y Conferencias:** Los usuarios pueden ver la lista de conferencistas, sus perfiles y las conferencias que estarán impartiendo.
+- **Panel de Administración:** Los administradores pueden gestionar el evento, incluyendo la administración de los conferencistas, workshops, eventos y la venta de pases.
 
 ## Tecnologías Utilizadas
 
 - **Frontend:** HTML, SASS y JavaScript.
 - **Backend:** PHP (usando un framework personalizado), patron de arquitectura MVC y patron de programación de Active Record.
 - **Base de Datos:** MySQL.
+- **Integración de Pagos:** PayPal.
 
 ## Instalación
 
@@ -40,4 +42,4 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
 ## Créditos
 
-Este proyecto fue creado por [Luciano Emmanuel Gatti Flekenstein]. ¡Gracias a todos los contribuyentes!
+Este proyecto fue creado por [Luciano Emmanuel Gatti Flekenstein].
